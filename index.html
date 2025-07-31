@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Girlfriend's Day</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 30px 20px;
+      color: #5dade2;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #5dade2;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 20px;
+      margin: 10px;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #7fbcea;
+    }
+
+    .message {
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: #3498db;
+      min-height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Girlfriend's Day, My Love 💖</h1>
+
+  <div id="buttons">
+    <button onclick="showMessage(0)">❤️</button>
+    <button onclick="showMessage(1)">💗</button>
+    <button onclick="showMessage(2)">💕</button>
+    <button onclick="showMessage(3)">💖</button>
+    <button onclick="showMessage(4)">💘</button>
+    <button onclick="showMessage(5)">💝</button>
+    <button onclick="showMessage(6)">💞</button>
+    <button onclick="showMessage(7)">😍</button>
+    <button onclick="showMessage(8)">😘</button>
+    <button onclick="showMessage(9)">🌸</button>
+  </div>
+
+  <div class="message" id="messageBox"></div>
+
+  <script>
+    const messages = [
+      "You make my world brighter, my love.",
+      "Chingu, your smile is my favorite thing ever.",
+      "Lovey, I’m so lucky to have you.",
+      "Charvi, you're the best part of every single day.",
+      "Chabbu, loving you is the easiest thing I’ve ever done.",
+      "My love, you’re everything I didn’t know I needed.",
+      "Charbi, you’re my safe place and my biggest joy.",
+      "My heart is yours — today and always, lovey.",
+      "Every second with you is a blessing, my love.",
+      "I’ll always choose you, Chingu — again and again."
+    ];
+
+    function showMessage(index) {
+      document.getElementById("messageBox").textContent = messages[index];
+    }
+  </script>
+</body>
+</html>
